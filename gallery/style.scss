@@ -1,0 +1,145 @@
+$bg-color: #182747;
+$font-color: #D8D8D8;
+$nav-bg:#647E68;
+$nav-color:#D8D8D8;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif ;
+    background-color: $bg-color;
+}
+nav{
+    background-color: $nav-bg;
+    color: $font-color;
+    padding: 0 20px;
+    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu";
+    align-items: center;
+    margin-bottom: 20px;
+
+h1{
+    grid-area: logo;
+}
+ul{
+    grid-area: menu;
+    list-style: none;
+    justify-self: end;
+    li{
+        display: inline-block;
+        margin: 0 15px;
+        a{
+            color: $font-color;
+            text-decoration: none;
+        }
+    }
+}
+input,label{
+    display: none;
+}
+}
+@media screen and(max-width:768px){
+    nav{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 80px 1fr;
+        grid-template-areas: 
+        "logo hamburger"
+        "menu menu";
+        height: auto;
+    
+    label{
+        display: block;
+         font-size: 30px;
+         justify-self: end;
+     
+    }
+    
+    ul{
+        display: none;
+    }
+
+    #open-menu:checked +ul{
+        width: 100%;
+        grid-area: menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px);
+        flex-direction: column;
+        li{
+            display: block;
+            font-size: 30px;
+            margin: 10px 0;
+        }
+    }
+}
+}
+.f1{
+    width: 350px; 
+    height: 350px;
+    float: left;
+}
+.f1-1{
+    width: 350px; 
+    height: 350px;
+    float: right;
+}
+.f1-2{
+    width: 350px; 
+    height: 350px;
+    float: left;
+}
+.f1-3{
+    width: 350px; 
+    height: 350px;
+    float: right;
+}
+.f2{
+    width: 700px;
+    height: 700px;
+}
+.f3{
+    width: 1000px;
+    height: 550px;
+}
+h1{
+    display: inline;
+}
+.a1{
+    font-size: 15px;
+    width: 700px;
+    height: 700px;
+    float: left;
+    text-align: center;
+    margin-left: 7px;
+    color: $font-color;
+}
+.a2{
+    font-size: 15px;
+    width: 700px;
+    height: 700px;
+    float: right;
+    text-align: center;
+    margin-right: 7px;
+    color: $font-color;
+}
+.a3{
+    font-size: 15px;
+    width: 700px;
+    height: 700px;
+    margin-top: 770px;
+    margin-left: 360px;
+    text-align: center;
+    color: $font-color;
+    align-self: center;
+}
+.h{
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}

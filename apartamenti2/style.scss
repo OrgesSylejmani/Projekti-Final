@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+$bg-color: #182747;
+$font-color: #D8D8D8;
+$nav-bg:#647E68;
+$nav-color:#D8D8D8;
+.nav{
+    margin-bottom: 20px;
+    background-color: $nav-bg;
+    font-size: 32px;
+    font-family: "Roboto", sans-serif ;
+    height: 60px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+    color: $font-color;
+}
+.box1{
+    width: 670px;
+    height: 800px;
+    display: inline;
+    padding: 7px;
+}
+.box2{
+    width: 670px;
+    height: 800px;
+    display: inline;
+    padding: 7px;
+}
+.box3{
+    width: 670px;
+    height: 800px;
+    display: inline;
+    padding: 7px;
+}
+.box4{
+    width: 670px;
+    height: 800px;
+    display: inline;
+    padding: 7px;
+}
+.box5{
+    width: 670px;
+    height: 800px;
+    display: inline;
+    padding: 7px;
+}
+.box6{
+    width: 670px;
+    height: 800px;
+    display: inline;
+    padding: 7px;
+}
